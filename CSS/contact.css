@@ -1,0 +1,147 @@
+
+/* PORTADA */
+.portadaContact{
+    text-align: center;
+    margin: -50px -140px 10px -140px;
+}
+
+.imgPortadaC{
+    width: 60%;
+}
+
+
+/* CONTENIDO */
+.contact-content h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 2rem;
+    padding: 20px;
+}
+.urgencia{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.urgencia span{
+    font-weight: bold;
+}
+/* FORMULARIO */
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.msj-error, .btn-enviar, .form_grupo-input #mensaje{
+    grid-column: span 2;
+}
+.form_label{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 700;
+    padding: 10px;
+}
+.form_grupo-input{
+    position: relative;
+}
+.form_input{
+    width: 90%;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    height: 45px;
+    padding: 0px 10px;
+    /* line-height: 45px; */
+}
+.form_grupo-input #mensaje{
+    height: 120px;
+}
+.form_input:focus{
+    border: 2px solid rgb(175, 138, 175);
+    outline: none;
+}
+.input-error{
+    font-size: 0.9rem;
+    display: none;
+}
+.input-error-active{
+    display: block;
+}
+.validacion{
+    opacity: 0;
+}
+.msj-error, .msj-exito{
+    display: none;
+}
+.msj-error-active, .msj-exito-active{
+    display: block;
+}
+.form_btn{
+    padding: 15px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: rgba(175, 138, 175, 0.712);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos VALIDACION */
+.form_grupo-correcto .validacion {
+    color: #1ed12d;
+    opacity: 1;
+}
+.form_grupo-incorrecto .form_label {
+    color: #bb2929;
+    opacity: 1;
+}
+.form_grupo-incorrecto .validacion {
+    color: #bb2929;
+    opacity: 1;
+}
+.form_grupo-incorrecto .form_input{
+    border: 2px solid #bb2929;
+}
+
+/* MAPA */
+.mapa{
+    text-align: center;
+    margin-bottom: 40px;
+}
+iframe{
+    width: 400px;
+}
+.mapa h3{
+    text-transform: uppercase;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.7;
+    padding: 20px;
+}
+
+/* DISEÑO RESPONSIVE */
+@media (max-width: 768px){
+    .contect-content h1{
+        font-size: 1.7rem;
+    }
+    .formulario{
+        grid-template-columns: 1fr;
+    }
+    .msj-error, .btn-enviar{
+        grid-column: 1;
+    }
+    .form_btn{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px){
+    .contact-content h1{
+        font-size: 1.5rem;
+    }
+    .form_btn{
+        font-size: 1rem;
+    }
+    iframe{
+        width: 80%;
+    }
+
+}
+

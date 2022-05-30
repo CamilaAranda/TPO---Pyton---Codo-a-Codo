@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/63a2cd6db4.js" crossorigin="anonymous"></script>
+    <!-- Llamada a hoja CSS -->
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <!-- Llamada a hoja JS -->
+    <script defer src="../JS/archivo.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../img/favicon-16x16.png" sizes="16x16" />
+
+    <title>Huellitas</title>
+</head>
+
+<body>
+    <header class="header">
+        <!-- MENÚ BARRA DE NAVEGACIÓN -->
+        <nav class="barra-nav"> 
+            <a href="index.html"><img src="../img/logo.png" class="logo" alt="logo Huellitas"></a>
+             <ul class="menubar">
+                <li><a href="index.html"> Inicio </a></li>
+                <li><a href="about.html"> Nosotros </a></li>
+                <li><a href="services.html"> Servicios </a></li>
+                <li><a href="contact.html"> Contacto </a></li>
+             </ul>
+            <button class="btn-opencloseMenu" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+       
+    </header>
+    <!-- CONTENT -->
+    <div class="contact-content">
+        <div class="portadaContact">
+            <img src="../img/Posibles fotos/istockphoto-930281684-170667a.jpg" class="imgPortadaC" alt="">
+        </div>
+        <h1>Contacto</h1>
+        <p class="urgencia">En caso de urgencia comunicarse al <span>223-5123456</span><br></p>
+        <!-- Formulario -->
+        <div class="formularioContacto">
+            <form action="" class="formulario" id="idFormulario">
+                <!-- Nombre -->
+                <div class="form_grupo" id="grupo_nombre">
+                    <label for="nombre" class="form_label">Nombre</label>
+                    <div class="form_grupo-input">
+                        <input type="text" class="form_input" name="nombre" id="nombre">
+                        <i class="validacion fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="input-error">El nombre solo puede contener letras.</p>
+                </div>
+
+                  <!-- Apellido -->
+                  <div class="form_grupo" id="grupo_apellido">
+                    <label for="apellido" class="form_label">Apellido</label>
+                    <div class="form_grupo-input">
+                        <input type="text" class="form_input" name="apellido" id="apellido">
+                        <i class="validacion fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="input-error">El apellido solo puede contener letras.</p>
+                </div>
+
+                 <!-- Teléfono -->
+                 <div class="form_grupo" id="grupo_telefono">
+                    <label for="telefono" class="form_label">Teléfono</label>
+                    <div class="form_grupo-input">
+                        <input type="text" class="form_input" name="telefono" id="telefono">
+                        <i class="validacion fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="input-error">El teléfono solo puede contener números.</p>
+                </div>
+
+                <!-- Email -->
+                <div class="form_grupo" id="grupo_email">
+                    <label for="email" class="form_label">Email</label>
+                    <div class="form_grupo-input">
+                        <input type="email" class="form_input" name="email" id="email">
+                        <i class="validacion fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="input-error">Email no válido.</p>
+                </div>
+
+                <!-- Mensaje -->
+                <div class="form_grupo" id="grupo_mensaje">
+                    <label for="mensaje" class="form_label">Mensaje</label>
+                    <div class="form_grupo-input">
+                        <input type="text" class="form_input" name="mensaje" id="mensaje">
+                        <i class="validacion fa-solid fa-circle-xmark"></i>
+                    </div>
+                </div>
+
+                <!-- Mensaje de ERROR -->
+                <div class="msj-error" id="msj-error">
+                    <p><i class="fa-solid fa-triangle-exclamation"></i><b> Error: </b>Por favor rellena el formulario correctamente.</p>
+                </div>
+
+                <!--Botón enviar -->
+                <div class="form_grupo btn-enviar">
+                    <button type="submit" class="form_btn">Enviar</button>
+                    <p class="msj-exito" id="msj-exito">Formulario enviado exitosamente.</p>
+                </div>
+            </form>
+        </div>
+        <div class="mapa">
+            <h3>¿Dónde encontrarnos?</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12577.894421014966!2d-57.55619817288543!3d-37.98941222931264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dc0094854633%3A0x2f2e3c35e1890307!2sAv.%20Independencia%201111%2C%20B7600DHH%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1653262718878!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> Mapa</iframe>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="contacto-footer">
+            <p><span>Contacto</span><br>
+            Av. Independencia 1111, Mar del Plata<br>
+            Buenos Aires, Argentina<br>
+            (+54) 223-5123456</p>
+                <ul class="socialMedia">
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i> </a></li>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+        </div>
+    </footer>
+</body>
+</html>

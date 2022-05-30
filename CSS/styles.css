@@ -1,0 +1,190 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 120px;
+    padding: 110px 20px 0px 20px ; /*Para que no lo tape por la barra de nav*/
+    background-color: rgb(245, 245, 220);
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 1.3rem;
+}
+.header{
+    position: fixed;
+    background-color: rgb(247, 225, 194);
+    width: 100%;
+    margin: auto;
+    height: 90px;
+    top: 0;
+    left: 0;
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+}
+
+
+/* MENÚ BARRA DE NAVEGACIÓN */
+.barra-nav {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin: 0px 25px;
+}
+
+.menubar{
+    display: flex;
+}
+.menubar li {
+    list-style: none;
+}
+
+.menubar a{
+    text-decoration: none;
+    color:  rgba(73, 50, 95, 0.932);
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.menubar a:hover {
+    background-color: rgba(255, 255, 255, 0.603);
+    transition: 0.3s;
+}
+ /* LOGO BARRA DE NAV */
+.logo {
+    height: 90px;
+}
+.logo:hover {
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+    transition: 0.5s;
+}
+
+/* MENÚ HAMBURGUESA */
+.btn-opencloseMenu {
+    color: rgba(80, 59, 100, 0.932);
+    background: none;
+    border: none;
+    display: none;   /* Para que no se vea en escritorio */
+}
+
+/* FOOTER */
+.contacto-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(247, 225, 194);
+    margin: 10px -140px 0px -140px;
+    padding: 20px;
+}
+.contacto-footer span{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.contacto-footer p{
+    font-size: 1.1rem;
+}
+.socialMedia{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.socialMedia a{
+    padding: 0px 20px;
+    color:  rgba(73, 50, 95, 0.932);
+}
+
+/* DISEÑO RESPONSIVE */
+@media (max-width: 768px){
+    .header{
+        height: 80px;
+    }
+    body{
+        padding-top: 100px; /*Para que no lo tape por la barra de nav*/
+        margin: 0 50px;
+    }
+    
+    .menubar{
+        flex-direction: column;
+        align-items: center;
+        background-color: antiquewhite;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 2px 0px;
+        position: fixed;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        padding: 10px 0px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.4s;
+    }
+    .menubar li{
+        padding: 10px 0px;
+    }
+    .menubar a:hover {
+        background: none;
+        font-weight: 600;
+        transition: 0.2s;
+    }
+   
+    .logo {
+        height: 80px;
+        margin-top: 0;
+        padding-left: 15px;
+    }
+
+    .btn-opencloseMenu{
+        display: block;
+        cursor: pointer;
+        font-size: 25px;
+        padding-right: 20px;
+    }
+   
+    .menu_opened{
+        opacity: 1;
+        pointer-events: all;
+    }
+    /* Footer*/
+    .contacto-footer{
+        margin: 10px -70px 0px -70px;
+    }
+}
+
+@media (max-width: 576px){
+    
+    .header{
+        height: 75px;
+    }
+    body{
+        font-size: 1rem;
+        margin: 0px 20px;
+    }
+    .barra-nav {
+        font-size: 1.3rem;
+    }
+    .menubar{
+        top: 75px;
+        padding: 0;
+    }
+    .logo {
+        height: 70px;
+        margin-top: 5px;
+    }
+    .btn-opencloseMenu{
+        font-size: 20px;
+    }
+     /* Footer */
+     .contacto-footer{
+        margin: 10px -40px 0px -40px;
+    }
+    .contacto-footer span{
+        font-size: 1.3rem;
+    }
+    .contacto-footer p{
+        font-size: 0.9rem;
+    }
+}

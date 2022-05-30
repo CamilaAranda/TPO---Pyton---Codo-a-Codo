@@ -1,0 +1,126 @@
+/* PORTADA */
+ .imgPortadaA{
+    width: 500px;
+    border: 1px solid white;
+    }
+.portadaAbout h1{
+    font-size: 2rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    padding: 10px;
+    text-transform: uppercase;
+} 
+.portadaAbout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    /* margin: 0px -120px 25px -120px;
+    background-image: url(../img/huellas3.png);
+    background-repeat: no-repeat; */
+}
+
+/* CONTENIDO */
+.imgMisionAbout{
+    text-align: center;
+}
+.imgMision{
+    width: 100%;
+}
+
+.consultorios h3{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.imgs_consultorios{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgConsultorio{
+    width: 49%;
+    margin: 15px 0;
+    border: 1px solid white;
+   /* border-radius: 200px; */
+}
+.objetivos{
+    display: flex;
+    text-align: justify;
+    padding: 20px 0;
+    margin: 0 -30px;
+}
+.obj {
+    background-color: rgb(175, 138, 175);
+    border-radius: 15px;
+    border-style: solid;
+    border-color: rgba(165, 42, 42, 0.137);
+    flex-grow: 1;
+    flex-basis: 100%;
+    padding: 30px;
+    margin: 5px;
+}
+
+.obj h4 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.valores ul{
+    list-style: inside;
+}
+
+
+/* DISEÑO RESPONSIVE */
+@media (max-width: 885px){
+    .objetivos{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px){
+
+    .imgPortadaA{
+        width: 400px;
+        }
+    .portadaAbout h1{
+        font-size: 1.7rem;
+        padding: 15px;
+    } 
+    .objetivos{
+        flex-wrap: wrap;
+    }
+    .consultorios h3{
+        font-size: 1.7rem;
+    }
+  
+}
+
+@media all and (max-width: 576px){
+    
+   .imgPortadaA{
+    width: 300px;
+    }
+   
+    .portadaAbout h1{
+        font-size: 1.5rem;
+    }
+    .obj{
+        padding: 10px;
+    }
+    .consultorios h3{
+        font-size: 1.2rem;
+    }
+
+    .misionVisionValores{
+        flex-wrap: wrap;
+    }
+    .imgs_consultorios{
+        flex-wrap: wrap;
+    }
+    .imgConsultorio{
+        width: 100%;
+    }
+
+}

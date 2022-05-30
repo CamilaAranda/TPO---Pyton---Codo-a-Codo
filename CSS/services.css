@@ -1,0 +1,72 @@
+/* PORTADA */
+.portadaServices{
+   margin: -50px -140px 30px -140px;
+   background-color: white;
+   text-align: center;
+}
+.imgPortadaS{
+    padding-top: 20px;
+    width: 50%;
+}
+/* CONTENIDO */
+.services-content h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    padding: 10px;
+}
+
+.servicios{
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.serv{
+    font-size: 1.2rem;
+    width: 280px;
+    height: 300px;
+    margin: 15px 10px;
+}
+.serv h5{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin-top: 10px;
+}
+.serv p{
+    text-align: justify;
+}
+.imgServ{
+    width: 100px;
+}
+.imgAnimalesAbout{
+    margin-top: 50px;
+    width: 100%;
+}
+
+/* DISEÑO RESPONSIVE */
+@media (max-width: 768px){
+    .portadaServices{
+        margin: -20px -80px 20px -80px;
+    }
+    .services-content h1{
+        font-size: 1.7rem;
+    }
+    
+    .servicios{
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 576px){
+    .portadaServices{
+        margin: -20px -50px 20px -50px;
+    }
+    .services-content h1{
+        font-size: 1.5rem;
+    }
+}
